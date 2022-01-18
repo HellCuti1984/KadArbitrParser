@@ -19,12 +19,6 @@ namespace KadArbitr
 
         static IWebDriver driver { get; set; } = null;
 
-        static IWebElement fromJsElem(string query)
-        {
-            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
-            return (IWebElement)js.ExecuteScript(query);
-        }
-
         private void StartParsing_Click(object sender, RoutedEventArgs e)
         {
             driver = new core.WebDriver.WebDriver("Любой", "", "Тест").StartAndAtachToChrome();
