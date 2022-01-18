@@ -1,0 +1,159 @@
+﻿<Window x:Class="KadArbitr.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KadArbitr"
+        mc:Ignorable="d"
+        Title="Kad.Arbitr.Ru" Height="241" Width="450" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" x:Name="Court" Height="81" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="39"/>
+                <RowDefinition Height="41"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" FontSize="16" HorizontalContentAlignment="Center" FontWeight="Black">Суд</Label>
+            <ComboBox Grid.Row="1" x:Name="CourtCB" FontSize="16">
+                <ComboBoxItem Content="Верховный Суд РФ"></ComboBoxItem>
+                <ComboBoxItem Content="Высший Арбитражный Суд РФ"></ComboBoxItem>
+                <ComboBoxItem Content="АС Волго-Вятского округа"></ComboBoxItem>
+                <ComboBoxItem Content="АС Восточно-Сибирского округа"></ComboBoxItem>
+                <ComboBoxItem Content="АС Дальневосточного округа"></ComboBoxItem>
+                <ComboBoxItem Content="АС Западно-Сибирского округа"></ComboBoxItem>
+                <ComboBoxItem Content="АС Московского округа"></ComboBoxItem>
+                <ComboBoxItem Content="АС Поволжского округа"></ComboBoxItem>
+                <ComboBoxItem Content="АС Северо-Западного округа"></ComboBoxItem>
+                <ComboBoxItem Content="АС Северо-Кавказского округа"></ComboBoxItem>
+                <ComboBoxItem Content="АС Уральского округа"></ComboBoxItem>
+                <ComboBoxItem Content="АС Центрального округа"></ComboBoxItem>
+                <ComboBoxItem Content="1 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="2 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="3 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="4 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="5 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="6 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="7 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="8 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="9 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="10 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="11 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="12 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="13 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="14 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="15 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="16 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="17 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="18 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="19 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="20 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="21 арбитражный апелляционный суд"></ComboBoxItem>
+                <ComboBoxItem Content="АС Алтайского края"></ComboBoxItem>
+                <ComboBoxItem Content="АС Амурской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Архангельской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Астраханской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Белгородской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Брянской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Владимирской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Волгоградской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Вологодской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Воронежской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС города Москвы"></ComboBoxItem>
+                <ComboBoxItem Content="АС города Санкт-Петербурга и Ленинградской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС города Севастополя"></ComboBoxItem>
+                <ComboBoxItem Content="АС Еврейской автономной области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Забайкальского края"></ComboBoxItem>
+                <ComboBoxItem Content="АС Ивановской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Иркутской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Кабардино-Балкарской Республики"></ComboBoxItem>
+                <ComboBoxItem Content="АС Калининградской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Калужской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Камчатского края"></ComboBoxItem>
+                <ComboBoxItem Content="АС Карачаево-Черкесской Республики"></ComboBoxItem>
+                <ComboBoxItem Content="АС Кемеровской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Кировской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Коми-Пермяцкого АО"></ComboBoxItem>
+                <ComboBoxItem Content="АС Костромской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Краснодарского края"></ComboBoxItem>
+                <ComboBoxItem Content="АС Красноярского края"></ComboBoxItem>
+                <ComboBoxItem Content="АС Курганской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Курской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Липецкой области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Магаданской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Московской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Мурманской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Нижегородской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Новгородской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Новосибирской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Омской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Оренбургской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Орловской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Пензенской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Пермского края"></ComboBoxItem>
+                <ComboBoxItem Content="АС Приморского края"></ComboBoxItem>
+                <ComboBoxItem Content="АС Псковской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Адыгея"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Алтай"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Башкортостан"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Бурятия"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Дагестан"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Ингушетия"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Калмыкия"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Карелия"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Коми"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Крым"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Марий Эл"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Мордовия"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Саха"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Северная Осетия"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Татарстан"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Тыва"></ComboBoxItem>
+                <ComboBoxItem Content="АС Республики Хакасия"></ComboBoxItem>
+                <ComboBoxItem Content="АС Ростовской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Рязанской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Самарской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Саратовской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Сахалинской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Свердловской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Смоленской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Ставропольского края"></ComboBoxItem>
+                <ComboBoxItem Content="АС Тамбовской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Тверской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Томской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Тульской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Тюменской области"></ComboBoxItem>
+                <ComboBoxItem Content="Суд по интеллектуальным правам"></ComboBoxItem>
+                <ComboBoxItem Content="АС Удмуртской Республики"></ComboBoxItem>
+                <ComboBoxItem Content="АС Ульяновской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Хабаровского края"></ComboBoxItem>
+                <ComboBoxItem Content="АС Ханты-Мансийского АО"></ComboBoxItem>
+                <ComboBoxItem Content="АС Челябинской области"></ComboBoxItem>
+                <ComboBoxItem Content="АС Чеченской Республики"></ComboBoxItem>
+                <ComboBoxItem Content="АС Чувашской Республики"></ComboBoxItem>
+                <ComboBoxItem Content="АС Чукотского АО"></ComboBoxItem>
+                <ComboBoxItem Content="АС Ямало-Ненецкого АО"></ComboBoxItem>
+                <ComboBoxItem Content="АС Ярославской области"></ComboBoxItem>
+                <ComboBoxItem Content="ПСП Арбитражного суда Пермского края"></ComboBoxItem>
+                <ComboBoxItem Content="ПСП Арбитражный суд Архангельской области"></ComboBoxItem>
+            </ComboBox>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <DatePicker Grid.Row="0" x:Name="FirstDate" FontSize="16" FontWeight="Bold"></DatePicker>
+            <DatePicker Grid.Row="1" x:Name="LastDate" FontSize="16" FontWeight="Bold"></DatePicker>
+            <Button Grid.Row="2" FontSize="20" x:Name="StartParsing" Click="StartParsing_Click">Запуск</Button>
+
+        </Grid>
+
+    </Grid>
+</Window>
