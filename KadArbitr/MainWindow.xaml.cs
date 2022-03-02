@@ -25,7 +25,13 @@ namespace KadArbitr
 
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("https://kad.arbitr.ru/");
-            Thread.Sleep(1500);
+            Thread.Sleep(2000);
+
+            //КЛИК НА ЗАКРЫТИЕ ПРОМО ОКНА
+            var promoWin = driver.FindElements(By.XPath("/html/body/div[13]/div[2]/div/div/div/div/a[1]"));
+            if (promoWin.Count > 0)
+                promoWin[0].Click();
+
 
             //КЛИК ВЫБОРА СУДА
             IWebElement courtInput = driver.FindElement(By.XPath("/html/body/div[1]/div[1]/div[1]/dl/dd/div[3]/div/span/label/input"));
@@ -42,21 +48,21 @@ namespace KadArbitr
             lastDate.Click();
             lastDate.SendKeys(LastDate.Text);
 
-            var start_btn = driver.FindElement(By.XPath("/html/body/div[1]/div[1]/div[1]/dl/dd/div[7]/div[1]/div/button"));
+            var start_btn = driver.FindElement(By.XPath("/html/body/div[1]/div[1]/div[1]/dl/dd/div[7]/div[1]/div"));
             start_btn.Click();
             Thread.Sleep(2000);
 
             //КЛИК ВЫБОРА "БАНКРОТНЫЕ"
             IWebElement bankruptcy = driver.FindElement(By.CssSelector(".bankruptcy"));
             bankruptcy.Click();
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
 
             List<KadModel> kads = new List<KadModel>();
             for (int p = 0; p < 40; p++)
             {
                 try
                 {
-                    Thread.Sleep(1000);
+                    Thread.Sleep(3000);
                     List<string> curText = new List<string>();
                     var respondentElem = driver.FindElements(By.CssSelector(".respondent"));
                     for (int i = 0; i < respondentElem.Count; i++)

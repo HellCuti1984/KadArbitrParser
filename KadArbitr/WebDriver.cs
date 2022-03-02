@@ -1,15 +1,15 @@
-﻿using Polly;
+﻿using System;
+using System.IO;
 using System.Diagnostics;
+using Polly;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System.IO;
-using System;
 
 namespace core.WebDriver
 {
     class WebDriver
     {
-        const string PATH_TO_CHROME = @"C:\Program Files\Google\Chrome\Application\";
+        const string PATH_TO_CHROME = @"C:\Program Files\Google\Chrome\Application";
 
         public IWebDriver Driver { get; private set; }
 
